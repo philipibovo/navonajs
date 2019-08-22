@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <meta name="theme-color" content="#ad3465" />
+
+    <meta property="og:title" content="navonajs" />
+    <meta property="og:description" content="navonajs CSS/JQuery Library" />
+    <meta
+      property="og:image"
+      content="https://philipi.bovo.me/navonajs/img/social.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="navonajs" />
+    <meta property="og:url" content="https://philipi.bovo.me/navonajs/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="navona.js" />
+    <meta name="twitter:url" content="https://philipi.bovo.me/navonajs" />
+    <meta
+      name="twitter:image"
+      content="https://philipi.bovo.me/navonajs/img/social.png"
+    />
+
+    <title>navona.js</title>
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="css/pompei-1.0.0.min.css" />
+    <link rel="stylesheet" href="css/navona-1.0.0.min.css" />
+    <link rel="stylesheet" href="css/mycode-display.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="screen and (min-width:0px) and (max-width:480px)"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo-negative.svg" />
+    </header>
+
+    <main>
+      <section id="download">
+        <div class="pp-row">
+          <div class="pp-col">
+            <button>DOWNLOAD</button>
+            <p>1.0.0</p>
+          </div>
+          <!-- end .pp-col -->
+        </div>
+        <!-- end .pp-row -->
+      </section>
+      <!-- section#download -->
+
+      <section id="try">
+        <div class="pp-row">
+          <div class="pp-col">
+            <div class="title">Experimente</div>
+          </div>
+          <!-- end .pp-col -->
+        </div>
+        <!-- end .pp-row -->
+
+        <div class="pp-row">
+          <div class="pp-col-sm-12 pp-col-md-12 pp-col-lg-6">
+            <img
+              src="img/theme-dark.png"
+              class="navona-go"
+              for="gallery-dark"
+              data-navona-vertical="false"
+            />
+            <p>Tema Escuro</p>
+          </div>
+          <!-- end .pp-col -->
+          <div class="pp-col-sm-12 pp-col-md-12 pp-col-lg-6">
+            <img
+              src="img/theme-light.png"
+              class="navona-go"
+              for="gallery-light"
+            />
+            <p>Tema Claro</p>
+          </div>
+          <!-- end .pp-col -->
+        </div>
+        <!-- end .pp-row -->
+      </section>
+      <!-- section#try -->
+    </main>
+
+    <section id="use">
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="title">Como Usar?</div>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>1. Inclua em seu arquivo HTML o arquivo CSS do navona.js</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;link rel="stylesheet" href="css/navona-0.0.1.min.css"&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row space-top-30">
+        <div class="pp-col">
+          <p>2. Inclua em seu arquivo HTML a biblioteca JQuery</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;script type="text/javascript"
+              src="http://code.jquery.com/jquery-2.0.0.min.js"&gt;&lt;/script&gt;
+            </p>
+            <p class="line">
+              &lt;script type="text/javascript"
+              src="js/navona-0.0.1.min.js"&gt;&lt;/script&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row space-top-30">
+        <div class="pp-col">
+          <p>3. Estrutura da galeria</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">&lt;div id="id-my-gallery" class="navona"&gt;</p>
+            <p class="line space-1">&lt;ul&gt;</p>
+            <p class="line space-2">&lt;li&gt;</p>
+            <p class="line space-3">&lt;img src="img/image1.jpg"&gt;</p>
+            <p class="line space-3">
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.&lt;/p&gt;
+            </p>
+            <p class="line space-2">&lt;/li&gt;</p>
+            <p class="line space-2">&lt;li&gt;</p>
+            <p class="line space-3">&lt;img src="img/image2.jpg"&gt;</p>
+            <p class="line space-3">
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.&lt;/p&gt;
+            </p>
+            <p class="line space-2">&lt;/li&gt;</p>
+            <p class="line space-2">&lt;li&gt;</p>
+            <p class="line space-3">&lt;img src="img/image3.jpg"&gt;</p>
+            <p class="line space-3">
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.&lt;/p&gt;
+            </p>
+            <p class="line space-2">&lt;/li&gt;</p>
+            <p class="line space-1">&lt;/ul&gt;</p>
+            <p class="line">&lt;/div&gt;</p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            div <strong>.navona</strong>: principal classe do navona.js, esta
+            classe diz ao navegador que este elemento &lt;div&gt; é uma galeria
+            do navona.js
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            <strong>ul</strong>: elemento HTML que vai estruturar a galeria
+            navona.js
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            <strong>li</strong>: elemento HTML que vai encapsular a imagem e a
+            descrição de cada item da galeria navona.js
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p><strong>img</strong>: a imagem de cada item.</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            <strong>p</strong>: descrição de cada imagem, ela aparece após 5
+            segundos com o cursor parado em cima do item. (opcional)
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row space-top-30">
+        <div class="pp-col">
+          <p>4. Exibindo a galeria com um click</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;button class="navona-go" for="id-my-gallery" value="Go
+              navona!"&gt;&lt;/button&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Para exibir a galeria, adicione a classe
+            <strong>"navona-go"</strong> ao elemento e no elemento
+            <strong>"for"</strong>, adicione o ID da galeria que pretende
+            exibir. Feito isso, basta clicar no elemento que a galeria será
+            exibida.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row space-top-30">
+        <div class="pp-col">
+          <p>5. Ícone de orientação de modo paisagem</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">Javascript</p>
+            <p class="line">navonaLandscapeIcon = 'img/landscape.png';</p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Quando a galeria navona.js é exibida em uma tela na vertical, é
+            exibido um ícone orientando para que use o aparelho na horizontal.
+            Por padrão, o caminho onde está o ícone é
+            <strong>"img/landscape.png"</strong>, para personalizar este
+            caminho, basta em seu script (javascript) atribuir o caminho na
+            variável global <strong>navonaLandscapeIcon</strong>.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+    </section>
+    <!-- section#use -->
+
+    <section id="options">
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="title">Opções</div>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <h4>Exibição automática:</h4>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;body class="navona-auto-start"
+              data-navona-start="id-my-gallery"&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Para exibir a galeria navona.js, adicione em seu &lt;body&gt; a
+            classe <strong>class="navona-auto-start"</strong> e o atributo
+            <strong>data-navona-start="id-my-gallery"</strong>, neste atributo
+            deve-se colocar o ID da galeria que abrirá ao carregar a página.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <h4>Velocidade de exibição:</h4>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;div id="id-my-gallery" class="navona"
+              data-navona-speed="300"&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Para controlar a velocidade de exibição da galeria navona.js,
+            adicione o atributo <strong>data-navona-speed="[INTEIRO]"</strong>,
+            o valor é em milisegundos, ou seja 300 milisegundos é gual a 0.3
+            segundos.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>A velocidade padrão é de 700 milisegundos.</p>
+        </div>
+
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <h4>Exibição por clique:</h4>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;div id="id-my-gallery" class="navona"
+              data-navona-click="true"&gt;
+            </p>
+          </div>
+          <!-- end .code -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Por padrão, basta passar o cursor do mouse por cima da imagem
+            desejada que a mesma expandirá, porém se preferir que esta ação seja
+            feita apenas quando clicar na imagem basta adicionar o atributo
+            <strong>data-navona-click="true"</strong>.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <h4>Temas:</h4>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;div id="id-my-gallery" class="navona"
+              data-navona-theme="light"&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Por padrão, a galeria navona.js usa o tema "dark", mas é possível
+            usar o tema "light", para isso adicione o atributo
+            <strong>data-navona-theme="light"</strong>.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <h4>Modo retrato:</h4>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="mycode">
+            <p class="lang">HTML</p>
+            <p class="line">
+              &lt;div id="id-my-gallery" class="navona"
+              data-navona-portrait="true"&gt;
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Por padrão, a galeria navona.js não é exibida em modo retrato, ou
+            seja, quando a resolução da tela tem a altura maior que a largura,
+            neste caso, é exibido uma imagem indicando que altere para modo
+            paisagem.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            Mas caso queira exibir a galeria navona.js em modo retrato adicione
+            <strong>data-navona-portrait="true"</strong>.
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+    </section>
+    <!-- end section#options -->
+
+    <section id="feature">
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="title">Caracteristicas</div>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>Fácil de usar</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>Não requer configurações</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>100% responsivo</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>Funciona em todos os navegadores modernos</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>Requer JQuery +2.x</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+    </section>
+    <!-- end section#feature -->
+
+    <footer>
+      <img src="img/logo-philipi-negative.png" />
+      <p>
+        Desenvolvido por Philipi Bovo -
+        <a href="http://philipi.bovo.me" target="_blank">philipi.bovo.me</a>
+      </p>
+    </footer>
+
+    <div id="gallery-dark" class="navona">
+      <ul>
+        <li>
+          <img src="img/002.jpg" />
+          <p>Santos - SP - Brasil</p>
+        </li>
+        <li>
+          <img src="img/003.jpg" />
+          <p>Pacu Prata</p>
+        </li>
+        <li>
+          <img src="img/004.jpg" />
+          <p>Faraglione - Capri - Itália</p>
+        </li>
+        <li>
+          <img src="img/005.jpg" />
+          <p>Dancing Day</p>
+        </li>
+        <li>
+          <img src="img/006.jpg" />
+          <p>Pisa - Itália</p>
+        </li>
+        <li>
+          <img src="img/007.jpg" />
+          <p>Sargentinho Solitário</p>
+        </li>
+        -->
+      </ul>
+    </div>
+
+    <div
+      id="gallery-light"
+      class="navona"
+      data-navona-theme="light"
+      data-navona-click="true"
+      data-navona-portrait="true"
+    >
+      <ul>
+        <li>
+          <img src="img/002.jpg" />
+          <p>Santos - SP - Brasil</p>
+        </li>
+        <li>
+          <img src="img/003.jpg" />
+          <p>Pacu Prata</p>
+        </li>
+        <li>
+          <img src="img/004.jpg" />
+          <p>Faraglione - Capri - Itália</p>
+        </li>
+        <li>
+          <img src="img/005.jpg" />
+          <p>Dancing Day</p>
+        </li>
+        <li>
+          <img src="img/006.jpg" />
+          <p>Pisa - Itália</p>
+        </li>
+        <li>
+          <img src="img/007.jpg" />
+          <p>Sargentinho Solitário</p>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/pompei-1.0.0.min.js"></script>
+    <script type="text/javascript" src="js/navona-1.0.0.min.js"></script>
+    <script type="text/javascript" src="js/mycode-display.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+  </body>
+</html>
