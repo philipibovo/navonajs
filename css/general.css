@@ -1,115 +1,162 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:300|Roboto|Source+Code+Pro');
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300|Roboto|Source+Code+Pro");
 
-::-webkit-scrollbar{width:6px;border-left:1px solid #E6ECF8}
-::-webkit-scrollbar-thumb{background-color:#ccc}.is-form-page
-
-html, body {
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid #e6ecf8;
 }
-header, main, section, footer {clear: both;}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+.is-form-page html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+header,
+main,
+section,
+footer {
+  clear: both;
+}
 header {
-	width: 100%;
-	color: #fff;
-	background-image: linear-gradient(45deg, #ad3465, #d7943d);
-	text-align: center;
-	padding: 4% 0 3.5% 0;
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(45deg, #ad3465, #d7943d);
+  text-align: center;
+  padding: 4% 0 3.5% 0;
 }
-header > img {width: 320px;}
+header > img {
+  width: 320px;
+}
 main {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background: red;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: red;
 }
 section p {
-	margin: 0;
-	/*padding: 10px 0;*/
+  margin: 0;
+  /*padding: 10px 0;*/
 }
 section .title {
-	font-size: 40px;
-	font-weight: normal;
-	font-family: 'Comfortaa', cursive;
-	padding: 25px 0; 
-	cursor: default;
-	text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Comfortaa", cursive;
+  padding: 25px 0;
+  cursor: default;
+  text-align: center;
 }
-section#download {
-	width: 80%;
-	margin: 0;
-	padding: 5% 10% 3% 10%;
-	text-align: center;
-	background: #fff;
+section#start {
+  width: 80%;
+  margin: 0;
+  padding: 1% 10% 3% 10%;
+  text-align: center;
+  background: #707070;
+  color: #fff;
 }
-section#download button, section#download button:active, section#download button:visited {
-	background: #fff	;
-	border: 3px solid #ad3465	;
-	padding: 15px 30px;
-	font-size: 40px;
-	color: #ad3465;
-	transition: 500ms;
-	border-radius: 5px;
-	cursor: pointer;
+section#start div#or {
+  position: absolute;
+  width: 40px;
+  left: calc(50% - 25px);
+  margin-top: -125px;
+  background: #707070;
+  z-index: 1;
 }
-section#download > button:hover {
-	background: #ad3465;
-	color: #fff;
-	border-color: #fff;
-	transform: scale(1.2);
+section#start div#github p.title,
+section#start div#package p.title {
+  margin: 0 0 1% 0;
+  padding: 0;
+}
+section#start div#github,
+section#start div#package {
+  padding: 0 60px;
+}
+section#start div#github {
+  border-right: 1px dashed #a7a7a7;
+}
+section#start div#github a,
+section#start div#github a:active,
+section#start div#github a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+section#start div#github a:hover {
+  text-decoration: underline;
+}
+section#start button#btn-download,
+section#start button#btn-download:active,
+section#start button#btn-download:visited {
+  background: #707070;
+  border: 3px solid #fff;
+  padding: 10px 25px;
+  font-size: 20px;
+  color: #fff;
+  transition: 500ms;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section#start button#btn-download:hover {
+  transform: scale(1.1);
+}
+section#start button#btn-download ~ p {
+  margin-top: 8px;
 }
 section#try {
-	width: 80%;
-	margin: 0;
-	padding: 0% 10%;
-	text-align: center;
-	background: #fff;
+  width: 80%;
+  margin: 0;
+  padding: 0% 10%;
+  text-align: center;
+  background: #fff;
 }
 section#try img {
-	cursor: pointer;
-	-webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
-					box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 section#try .iten img:hover {
-	-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
-					box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
-	transition: all 250ms;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 250ms;
 }
 section#try p {
-	margin: 0;
-	padding: 0 0 60px 0;
+  margin: 0;
+  padding: 0 0 60px 0;
 }
 section#use {
-	width: 80%;
-	padding: 0 10% 3% 10%;
-	background: #27ae60;
-	color: #fff;
+  width: 80%;
+  padding: 0 10% 3% 10%;
+  background: #27ae60;
+  color: #fff;
 }
 section#options {
-	background: #2980b9;
-	color: #fff;
-	text-align: left;
-	width: 80%;
-	padding: 0 10% 3% 10%;
+  background: #2980b9;
+  color: #fff;
+  text-align: left;
+  width: 80%;
+  padding: 0 10% 3% 10%;
 }
 section#feature {
-	width: 80%;
-	padding: 0 10% 3% 10%;
-	text-align: center;
+  width: 80%;
+  padding: 0 10% 3% 10%;
+  text-align: center;
 }
 footer {
-	padding-top: 3%;
-	background: #292929;
-	color: #fff;
-	text-align: center;
-	margin-bottom: -6px;
+  padding-top: 3%;
+  background: #292929;
+  color: #fff;
+  text-align: center;
+  margin-bottom: -6px;
 }
-footer a, footer a:hover, footer a:active, footer a:visited {
-	color: #fff;
-	text-decoration: none;
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 .space-top-30 {
-	margin-top: 30px;
+  margin-top: 30px;
 }

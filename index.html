@@ -33,6 +33,12 @@
 
     <link rel="icon" href="img/favicon.png" />
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/pompei-1.0.0.min.css" />
     <link rel="stylesheet" href="css/navona-1.0.0.min.css" />
     <link rel="stylesheet" href="css/mycode-display.css" />
@@ -48,53 +54,97 @@
       <img src="img/logo-negative.svg" />
     </header>
 
-    <main>
-      <section id="download">
-        <div class="pp-row">
-          <div class="pp-col">
-            <button>DOWNLOAD</button>
-            <p>1.0.0</p>
-          </div>
-          <!-- end .pp-col -->
+    <section id="try">
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="title">Experimente</div>
         </div>
-        <!-- end .pp-row -->
-      </section>
-      <!-- section#download -->
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
 
-      <section id="try">
-        <div class="pp-row">
-          <div class="pp-col">
-            <div class="title">Experimente</div>
-          </div>
-          <!-- end .pp-col -->
+      <div class="pp-row">
+        <div class="pp-col-sm-12 pp-col-md-12 pp-col-lg-6">
+          <img
+            src="img/theme-dark.png"
+            class="navona-go"
+            for="gallery-dark"
+            data-navona-vertical="false"
+          />
+          <p>Tema Escuro</p>
         </div>
-        <!-- end .pp-row -->
+        <!-- end .pp-col -->
+        <div class="pp-col-sm-12 pp-col-md-12 pp-col-lg-6">
+          <img
+            src="img/theme-light.png"
+            class="navona-go"
+            for="gallery-light"
+          />
+          <p>Tema Claro</p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+    </section>
+    <!-- section#try -->
 
-        <div class="pp-row">
-          <div class="pp-col-sm-12 pp-col-md-12 pp-col-lg-6">
-            <img
-              src="img/theme-dark.png"
-              class="navona-go"
-              for="gallery-dark"
-              data-navona-vertical="false"
-            />
-            <p>Tema Escuro</p>
-          </div>
-          <!-- end .pp-col -->
-          <div class="pp-col-sm-12 pp-col-md-12 pp-col-lg-6">
-            <img
-              src="img/theme-light.png"
-              class="navona-go"
-              for="gallery-light"
-            />
-            <p>Tema Claro</p>
-          </div>
-          <!-- end .pp-col -->
+    <section id="start">
+      <div class="pp-row">
+        <div class="pp-col">
+          <div class="title">Começando</div>
         </div>
-        <!-- end .pp-row -->
-      </section>
-      <!-- section#try -->
-    </main>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div id="github" class="pp-col">
+          <p class="title">
+            <i class="fab fa-github"></i>
+          </p>
+
+          <p>Acesse o repositório do projeto no Github:</p>
+
+          <p>
+            <a href="https://github.com/philipibovo/navonajs" target="_blank">
+              https://github.com/philipibovo/navonajs
+            </a>
+          </p>
+
+          <p class="space-top-30">
+            Clone o projeto do Github diretamente em seu diret&oacute;rio usando
+            o terminal:
+          </p>
+
+          <div class="mycode">
+            <p class="lang">Terminal</p>
+            <p class="line">
+              git clone https://github.com/philipibovo/navonajs.git
+            </p>
+          </div>
+          <!-- end .mycode -->
+        </div>
+        <!-- end .pp-col#github -->
+        <div id="package" class="pp-col">
+          <p class="title">
+            <i class="far fa-file-archive"></i>
+          </p>
+
+          <p>Faça o download do pacote:</p>
+
+          <button id="btn-download" class="space-top-30">
+            DOWNLOAD (zipped package)
+          </button>
+
+          <p>1.0.0</p>
+        </div>
+        <!-- end .pp-col#package -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div id="or">OU</div>
+    </section>
+    <!-- section#start -->
 
     <section id="use">
       <div class="pp-row">
