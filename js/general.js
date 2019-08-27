@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#btn-download").click(function() {
-	  window.location = 'navonajs-1.0.0.zip';
-	});
+    window.location =
+      "https://github.com/philipibovo/navonajs/archive/1.0.0.zip";
+  });
 });
