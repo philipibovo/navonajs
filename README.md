@@ -13,12 +13,13 @@ A simple and beuatiful photo gallery
 ...
 
 3. Add the JS file after JQuery
-...
+
+```
 <script type="text/javascript" src="js/navona-1.0.x.min.js"></script>
-...
+```
 
 4. Build your **_Navona Gallery_** at level 0 of the <body> element
-...
+```
 <div id="id-my-gallery" class="navona">
   <ul>
     <li>
@@ -35,13 +36,13 @@ A simple and beuatiful photo gallery
     </li>
   </ul>
 </div>
-...
+```
 
 5. Show the **_Navona Gallery_** with click
-Add class *navona-go* and add the ID of your galley on attribute *for*
-...
+-- Add class *navona-go* and add the ID of your galley on attribute *for*
+```
 <button class="navona-go" for="id-my-gallery" value="Go navona!"></button>
-...
+```
 
 ### For more options, access:
 [NavonaJS][https://philipi.bovo.me/navonajs/]
