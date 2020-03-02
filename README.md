@@ -45,4 +45,4 @@ A simple and beuatiful photo gallery
 ```
 
 ### For more options, access:
-[NavonaJS][https://philipi.bovo.me/navonajs/]
+[https://philipi.bovo.me/navonajs/](https://philipi.bovo.me/navonajs/).
