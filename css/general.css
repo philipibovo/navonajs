@@ -93,7 +93,10 @@ section#start div#github {
 
 section#start div#github a,
 section#start div#github a:active,
-section#start div#github a:visited {
+section#start div#github a:visited,
+section#start div#package a,
+section#start div#package a:active,
+section#start div#package a:visited {
   color: #fff;
   text-decoration: none;
 }
