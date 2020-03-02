@@ -1,4 +1,4 @@
-# navonajs
+# navona.js
 A simple and beuatiful photo gallery
 
 ## How to use
@@ -8,9 +8,9 @@ A simple and beuatiful photo gallery
 ...
 
 2. Add the JQuery
-...
+```
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
-...
+```
 
 3. Add the JS file after JQuery
 
