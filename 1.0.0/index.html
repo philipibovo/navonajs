@@ -40,7 +40,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/pompei-1.0.0.min.css" />
-    <link rel="stylesheet" href="css/navona-2.0.0.min.css" />
+    <link rel="stylesheet" href="css/navona-1.0.1.min.css" />
     <link rel="stylesheet" href="css/mycode-display.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link
@@ -81,7 +81,7 @@
             class="navona-go"
             for="gallery-light"
           />
-          <p>Tema Claro com clique</p>
+          <p>Tema Claro</p>
         </div>
         <!-- end .pp-col -->
       </div>
@@ -134,16 +134,8 @@
           <p>Faça o download do pacote:</p>
 
           <button id="btn-download" class="space-top-30">
-            DOWNLOAD (2.0.0.zip)
+            DOWNLOAD (1.0.0.zip)
           </button>
-
-          <p>
-            <a
-              href="https://github.com/philipibovo/navonajs/releases"
-              target="_blank"
-              >Versões Anteriores</a
-            >
-          </p>
         </div>
         <!-- end .pp-col#package -->
       </div>
@@ -175,7 +167,7 @@
           <div class="mycode">
             <p class="lang">HTML</p>
             <p class="line">
-              &lt;link rel="stylesheet" href="css/navona-2.0.0.min.css"&gt;
+              &lt;link rel="stylesheet" href="css/navona-1.0.x.min.css"&gt;
             </p>
           </div>
           <!-- end .mycode -->
@@ -186,7 +178,7 @@
 
       <div class="pp-row space-top-30">
         <div class="pp-col">
-          <p>2. Inclua em seu arquivo HTML o arquivo navona-2.0.0.js</p>
+          <p>2. Inclua em seu arquivo HTML a biblioteca JQuery</p>
         </div>
         <!-- end .pp-col -->
       </div>
@@ -198,7 +190,11 @@
             <p class="lang">HTML</p>
             <p class="line">
               &lt;script type="text/javascript"
-              src="js/navona-2.0.0.min.js"&gt;&lt;/script&gt;
+              src="http://code.jquery.com/jquery-2.0.0.min.js"&gt;&lt;/script&gt;
+            </p>
+            <p class="line">
+              &lt;script type="text/javascript"
+              src="js/navona-1.0.x.min.js"&gt;&lt;/script&gt;
             </p>
           </div>
           <!-- end .mycode -->
@@ -220,27 +216,29 @@
           <div class="mycode">
             <p class="lang">HTML</p>
             <p class="line">&lt;div id="id-my-gallery" class="navona"&gt;</p>
-            <p class="line space-1">&lt;div&gt;</p>
-            <p class="line space-2">&lt;img src="img/image1.jpg"&gt;</p>
-            <p class="line space-2">
+            <p class="line space-1">&lt;ul&gt;</p>
+            <p class="line space-2">&lt;li&gt;</p>
+            <p class="line space-3">&lt;img src="img/image1.jpg"&gt;</p>
+            <p class="line space-3">
               &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.&lt;/p&gt;
             </p>
-            <p class="line space-1">&lt;/div&gt;</p>
-            <p class="line space-1">&lt;div&gt;</p>
-            <p class="line space-2">&lt;img src="img/image2.jpg"&gt;</p>
-            <p class="line space-2">
+            <p class="line space-2">&lt;/li&gt;</p>
+            <p class="line space-2">&lt;li&gt;</p>
+            <p class="line space-3">&lt;img src="img/image2.jpg"&gt;</p>
+            <p class="line space-3">
               &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.&lt;/p&gt;
             </p>
-            <p class="line space-1">&lt;/div&gt;</p>
-            <p class="line space-1">&lt;div&gt;</p>
-            <p class="line space-2">&lt;img src="img/image3.jpg"&gt;</p>
-            <p class="line space-2">
+            <p class="line space-2">&lt;/li&gt;</p>
+            <p class="line space-2">&lt;li&gt;</p>
+            <p class="line space-3">&lt;img src="img/image3.jpg"&gt;</p>
+            <p class="line space-3">
               &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.&lt;/p&gt;
             </p>
-            <p class="line space-1">&lt;/div&gt;</p>
+            <p class="line space-2">&lt;/li&gt;</p>
+            <p class="line space-1">&lt;/ul&gt;</p>
             <p class="line">&lt;/div&gt;</p>
           </div>
           <!-- end .mycode -->
@@ -252,7 +250,7 @@
       <div class="pp-row">
         <div class="pp-col">
           <p>
-            div<strong>.navona</strong>: principal classe do navona.js, esta
+            div <strong>.navona</strong>: principal classe do navona.js, esta
             classe diz ao navegador que este elemento &lt;div&gt; é uma galeria
             do navona.js
           </p>
@@ -264,8 +262,19 @@
       <div class="pp-row">
         <div class="pp-col">
           <p>
-            <strong>div</strong>: elemento HTML que vai estruturar a galeria
+            <strong>ul</strong>: elemento HTML que vai estruturar a galeria
             navona.js
+          </p>
+        </div>
+        <!-- end .pp-col -->
+      </div>
+      <!-- end .pp-row -->
+
+      <div class="pp-row">
+        <div class="pp-col">
+          <p>
+            <strong>li</strong>: elemento HTML que vai encapsular a imagem e a
+            descrição de cada item da galeria navona.js
           </p>
         </div>
         <!-- end .pp-col -->
@@ -505,7 +514,7 @@
             <p class="lang">HTML</p>
             <p class="line">
               &lt;div id="id-my-gallery" class="navona"
-              data-navona-theme="#ffffff"&gt;
+              data-navona-theme="light"&gt;
             </p>
           </div>
           <!-- end .mycode -->
@@ -517,9 +526,9 @@
       <div class="pp-row">
         <div class="pp-col">
           <p>
-            Por padrão, a galeria navona.js usa o tema "dark" (#000000), mas é
-            possível usar qualquer cor, para isso adicione o atributo
-            <strong>data-navona-theme</strong> com a cor em hexadecimal.
+            Por padrão, a galeria navona.js usa o tema "dark", mas é possível
+            usar o tema "light", para isso adicione o atributo
+            <strong>data-navona-theme="light"</strong>.
           </p>
         </div>
         <!-- end .pp-col -->
@@ -618,7 +627,7 @@
 
       <div class="pp-row">
         <div class="pp-col">
-          <p>Javacript Puro, não requer outras bibliotecas ou frameworks</p>
+          <p>Requer JQuery +2.x</p>
         </div>
         <!-- end .pp-col -->
       </div>
@@ -678,67 +687,72 @@
     <!-- end footer#contact -->
 
     <div id="gallery-dark" class="navona">
-      <div>
-        <img src="img/002.jpg" />
-        <p>Santos - SP - Brasil</p>
-      </div>
-      <div class="active">
-        <img src="img/003.jpg" />
-        <p>Pacu Prata</p>
-      </div>
-      <div>
-        <img src="img/004.jpg" />
-        <p>Faraglione - Capri - Itália</p>
-      </div>
-      <div>
-        <img src="img/005.jpg" />
-        <p>Dancing Day</p>
-      </div>
-      <div>
-        <img src="img/006.jpg" />
-        <p>Pisa - Itália</p>
-      </div>
-      <div>
-        <img src="img/007.jpg" />
-        <p>Sargentinho Solitário</p>
-      </div>
+      <ul>
+        <li>
+          <img src="img/002.jpg" />
+          <p>Santos - SP - Brasil</p>
+        </li>
+        <li>
+          <img src="img/003.jpg" />
+          <p>Pacu Prata</p>
+        </li>
+        <li>
+          <img src="img/004.jpg" />
+          <p>Faraglione - Capri - Itália</p>
+        </li>
+        <li>
+          <img src="img/005.jpg" />
+          <p>Dancing Day</p>
+        </li>
+        <li>
+          <img src="img/006.jpg" />
+          <p>Pisa - Itália</p>
+        </li>
+        <li>
+          <img src="img/007.jpg" />
+          <p>Sargentinho Solitário</p>
+        </li>
+      </ul>
     </div>
 
     <div
       id="gallery-light"
       class="navona"
-      data-navona-theme="#ffffff"
+      data-navona-theme="light"
       data-navona-click="true"
+      data-navona-portrait="true"
     >
-      <div>
-        <img src="img/002.jpg" />
-        <p>Santos - SP - Brasil</p>
-      </div>
-      <div class="active">
-        <img src="img/003.jpg" />
-        <p>Pacu Prata</p>
-      </div>
-      <div>
-        <img src="img/004.jpg" />
-        <p>Faraglione - Capri - Itália</p>
-      </div>
-      <div>
-        <img src="img/005.jpg" />
-        <p>Dancing Day</p>
-      </div>
-      <div>
-        <img src="img/006.jpg" />
-        <p>Pisa - Itália</p>
-      </div>
-      <div>
-        <img src="img/007.jpg" />
-        <p>Sargentinho Solitário</p>
-      </div>
+      <ul>
+        <li>
+          <img src="img/002.jpg" />
+          <p>Santos - SP - Brasil</p>
+        </li>
+        <li>
+          <img src="img/003.jpg" />
+          <p>Pacu Prata</p>
+        </li>
+        <li>
+          <img src="img/004.jpg" />
+          <p>Faraglione - Capri - Itália</p>
+        </li>
+        <li>
+          <img src="img/005.jpg" />
+          <p>Dancing Day</p>
+        </li>
+        <li>
+          <img src="img/006.jpg" />
+          <p>Pisa - Itália</p>
+        </li>
+        <li>
+          <img src="img/007.jpg" />
+          <p>Sargentinho Solitário</p>
+        </li>
+      </ul>
     </div>
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/pompei-1.0.0.min.js"></script>
-    <script type="text/javascript" src="js/navona-2.0.0.min.js"></script>
+    <script type="text/javascript" src="js/navona-1.0.1.min.js"></script>
     <script type="text/javascript" src="js/mycode-display.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
   </body>

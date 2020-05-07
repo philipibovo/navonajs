@@ -1,0 +1,121 @@
+/*!
+ * 2018.08.01
+ * navonajs 1.0.0 (http://philipi.bovo.me/navonajs)
+ * By Philipi Bovo
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300|Roboto');
+
+.navona {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	font-family: 'Roboto', sans-serif;
+	z-index: 999998;
+}
+
+.navona .light-theme {background: rgba(255,255,255,0.7)}
+
+.navona-close {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: right;
+	z-index: 999999;
+}
+
+.navona-close-button {
+	background: #444;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	padding: 6px;
+	margin: 1% 1%;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	transition: 150ms;
+	cursor: pointer;
+}
+
+.navona ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 96%;
+	height: 91vh;
+	padding: 0;
+	margin: 2%;
+}
+
+.navona ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+	transition: width 300ms;
+	box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.5);
+	overflow: hidden;
+	background-color: #111;
+}
+
+.navona ul li img {object-fit: cover}
+
+.navona ul li p {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	box-sizing: border-box;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 4%;
+	opacity: 0;
+}
+
+.navona ul li:hover p {
+	bottom: 0;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+
+.navona ul li p a, .navona ul li p a:active, .navona ul li p a:visited {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navona ul li p a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+div.navona-landscape {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.85);
+	z-index: 999998;
+}
+div.navona-landscape > div {
+	width: 100%;
+
+}
+img.navona-landscape {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	z-index: 999999;
+}
