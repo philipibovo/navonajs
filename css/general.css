@@ -31,6 +31,47 @@ header {
   background-image: linear-gradient(45deg, #ad3465, #d7943d);
 }
 
+header > .versions-link {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+header > .versions-link:hover {
+  color: #444;
+  background: rgb(255, 247, 238);
+}
+
+header > .versions-link > .title {
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+header > .versions-link > .list > ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+
+header > .versions-link:hover > .list > ul {
+  display: block;
+}
+
+header > .versions-link > .list > ul > li {
+  padding: 5px 13px;
+}
+
+header > .versions-link > .list > ul > li a,
+header > .versions-link > .list > ul > li a:active,
+header > .versions-link > .list > ul > li a:visited,
+header > .versions-link > .list > ul > li a:hover {
+  text-decoration: none;
+  color: #444;
+}
+
 header > img {
   width: 320px;
 }
