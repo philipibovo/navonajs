@@ -41,9 +41,6 @@ A simple and beautiful photo gallery of pure Javascript
 <button class="navona-go" for="id-my-gallery" value="Go navona!"></button>
 ```
 
-```
-
 ### For more options, access:
 
 [https://philipi.bovo.me/navonajs/](https://philipi.bovo.me/navonajs/).
-```
